@@ -11,6 +11,16 @@ class Main extends StatelessWidget {
       child: CustomScrollView(
   primary: false,
   slivers: <Widget>[
+    SliverAppBar(
+        expandedHeight: 200.0,
+        title: Text('Get to know all about COVID-19'),
+        centerTitle: true,
+        backgroundColor: Colors.blue[900],
+        shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+        bottom: Radius.circular(30),
+      )),
+    ),
     SliverPadding(
       padding: const EdgeInsets.all(20),
       sliver: SliverGrid.count(
